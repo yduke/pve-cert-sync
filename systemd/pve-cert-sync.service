@@ -1,0 +1,6 @@
+[Unit]
+Description=PVE Certificate Sync Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/pve-cert-sync
