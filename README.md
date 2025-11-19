@@ -1,5 +1,17 @@
 # PVE-Cert-Sync
 
+## 注意
+本脚本仅供本人使用，如果你想适配你的本地服务器，需要fork后修改：
+install.sh  中的  `REPO_URL`
+
+pve-cert-sync.sh 中的 `ACME_SERVER` `DOMAIN`
+
+然后将运行脚本改成你自己的github repo内的文件地址。
+
+---
+
+## 简介
+
 这个脚本解决了局域网多个服务器使用IPV6公网，在每一台服务器都需要搭建ACME申请、续期SSL证书的痛点。
 
 解决方法为：
@@ -18,15 +30,7 @@
 - systemd 定时执行（每天 4 次）
 - 开机后自动补执行错过的任务
 
-## 注意
-本脚本仅供本人使用，如果你想适配你的本地服务器，需要fork后修改：
-install.sh  中的  `REPO_URL`
 
-pve-cert-sync.sh 中的 `ACME_SERVER` `DOMAIN`
-
-然后将运行脚本改成你自己的文件地址。
-
----
 
 ## 安装方式（PVE / Debian 都支持）
 
